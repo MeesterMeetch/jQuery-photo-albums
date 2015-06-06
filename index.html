@@ -7,8 +7,7 @@
 </head>
 <body>
 
-    <div class="mainGallery">
-
+    <div class="page mainGallery">
 
       <header>
         <div class="page-header">
@@ -18,7 +17,122 @@
 
       <div class="container">
 
-        <div class="row">
+        <div class="album1 row-fluid">
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="http://placehold.it/300x300" alt="...">
+                <div class="caption">
+                  <h3>ALBUM 1</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="album2 col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="http://placehold.it/300x300" alt="...">
+                <div class="caption">
+                  <h3>ALBUM 2</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="album3 col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="http://placehold.it/300x300" alt="...">
+                <div class="caption">
+                  <h3>ALBUM 3</h3>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+        <div class="album4 row-fluid">
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="http://placehold.it/300x300" alt="...">
+                <div class="caption">
+                  <h3>ALBUM 4</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="album5 col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="http://placehold.it/300x300" alt="...">
+                <div class="caption">
+                  <h3>ALBUM 5</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="album6 col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="http://placehold.it/300x300" alt="...">
+                <div class="caption">
+                  <h3>ALBUM 6</h3>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+      </div>
+
+      <footer class="footer">
+          <div class="container">
+            <p class="text-muted">Place sticky footer content here.</p>
+          </div>
+        </footer>
+
+    </div> <!-- div class="mainGallery container" -->
+
+    <div class="page albumPage container-fluid">
+
+      <div class="SB row-fluid"> <!--Sidebar content-->
+        <div class="span2">
+          <div id="sidebar-wrapper">
+            <nav id="spy">
+                <ul class="sidebar-nav nav">
+                    <li class="sidebar-brand active">
+                        <a href="#home"><span class="fa fa-home solo">Home</span></a>
+                    </li>
+                    <li>
+                        <a href="#anch1" data-scroll="">
+                            <span class="fa fa-anchor solo">Anchor 1</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#anch2" data-scroll="">
+                            <span class="fa fa-anchor solo">Anchor 2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#anch3" data-scroll="">
+                            <span class="fa fa-anchor solo">Anchor 3</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#anch4" data-scroll="">
+                            <span class="fa fa-anchor solo">Anchor 4</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+          <!--Sidebar content-->
+        </div> <!--Sidebar content-->
+
+
+      <div class="span10">   <!-- main content -->
+
+        <header>
+          <div class="page-header">
+            <h1>Example page header</h1>
+          </div>
+        </header>
+
+        <div class="row-fluid">
             <div class="col-sm-6 col-md-4">
               <div class="thumbnail">
                 <img src="http://placehold.it/300x300" alt="...">
@@ -48,7 +162,7 @@
 
         </div>
 
-        <div class="row">
+        <div class="row-fluid">
             <div class="col-sm-6 col-md-4">
               <div class="thumbnail">
                 <img src="http://placehold.it/300x300" alt="...">
@@ -86,7 +200,8 @@
           </div>
         </footer>
 
-    </div> <!-- div class="mainGallery" -->
+    </div> <!-- div class="album1 container" -->
+
 
  <!-- Scripts -->
   <script type="text/javascript" src="bower_components/underscore/underscore-min.js"> </script>
