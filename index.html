@@ -3,42 +3,44 @@
 <head>
   <title>My jquery Album</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
 
-    <div class="page mainGallery">
+    <div id="homePage" class="page active">
 
       <header>
         <div class="page-header">
-          <h1>Example page header</h1>
+          <h1>My Albums</h1>
         </div>
       </header>
 
-      <div class="container">
+      <div class="container-fluid">
 
-        <div class="album1 row-fluid">
-            <div class="col-sm-6 col-md-4">
+        <div class="row">
+
+            <div class="Summer albumHolder col-sm-6 col-md-4">
               <div class="thumbnail">
-                <img src="http://placehold.it/300x300" alt="...">
+                  <img src="https://static.pexels.com/photos/1106/sea-sky-beach-holiday.jpg" alt="..." rel="">
                 <div class="caption">
                   <h3>ALBUM 1</h3>
                 </div>
               </div>
             </div>
 
-            <div class="album2 col-sm-6 col-md-4">
+            <div class="Car albumHolder col-sm-6 col-md-4">
               <div class="thumbnail">
-                <img src="http://placehold.it/300x300" alt="...">
+                  <img src="https://static.pexels.com/photos/111/black-and-white-dark-car-vehicle.jpg" alt="..." rel="">
                 <div class="caption">
                   <h3>ALBUM 2</h3>
                 </div>
               </div>
             </div>
 
-            <div class="album3 col-sm-6 col-md-4">
+            <div class="Building albumHolder col-sm-6 col-md-4">
               <div class="thumbnail">
-                <img src="http://placehold.it/300x300" alt="...">
+                  <img src="https://static.pexels.com/photos/814/building-house-high-rise-hdr.jpg" alt="..." rel="">
                 <div class="caption">
                   <h3>ALBUM 3</h3>
                 </div>
@@ -47,28 +49,29 @@
 
         </div>
 
-        <div class="album4 row-fluid">
-            <div class="col-sm-6 col-md-4">
+        <div class="row">
+
+            <div class="People albumHolder col-sm-6 col-md-4">
               <div class="thumbnail">
-                <img src="http://placehold.it/300x300" alt="...">
+                  <img src="https://static.pexels.com/photos/343/man-couple-people-woman.jpg" alt="..." rel="">
                 <div class="caption">
                   <h3>ALBUM 4</h3>
                 </div>
               </div>
             </div>
 
-            <div class="album5 col-sm-6 col-md-4">
+            <div class="City albumHolder col-sm-6 col-md-4">
               <div class="thumbnail">
-                <img src="http://placehold.it/300x300" alt="...">
+                  <img src="https://static.pexels.com/photos/291/black-and-white-city-landmark-lights.jpg" alt="..." rel="">
                 <div class="caption">
                   <h3>ALBUM 5</h3>
                 </div>
               </div>
             </div>
 
-            <div class="album6 col-sm-6 col-md-4">
+            <div class="Nature albumHolder col-sm-6 col-md-4">
               <div class="thumbnail">
-                <img src="http://placehold.it/300x300" alt="...">
+                  <img src="https://static.pexels.com/photos/176/wood-sea-landscape-mountains.jpg" alt="..." rel="">
                 <div class="caption">
                   <h3>ALBUM 6</h3>
                 </div>
@@ -87,11 +90,12 @@
 
     </div> <!-- div class="mainGallery container" -->
 
-    <div class="page albumPage container-fluid">
 
-      <div class="SB row-fluid"> <!--Sidebar content-->
-        <div class="span2">
-          <div id="sidebar-wrapper">
+    <div id="albumPageMain" class="page container-fluid">
+
+      <div class="SB row"> <!--Sidebar content-->
+        <div id="side-bar wrapper" class="span2">
+
             <nav id="spy">
                 <ul class="sidebar-nav nav">
                     <li class="sidebar-brand active">
@@ -117,73 +121,53 @@
                             <span class="fa fa-anchor solo">Anchor 4</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="#anch5" data-scroll="">
+                            <span class="fa fa-anchor solo">Anchor 4</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#anch6" data-scroll="">
+                            <span class="fa fa-anchor solo">Anchor 4</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
-        </div>
-          <!--Sidebar content-->
-        </div> <!--Sidebar content-->
+          </div> <!-- Sidebar wrapper -->
+      </div> <!--Sidebar content-->
 
 
-      <div class="span10">   <!-- main content -->
+      <div id="imageGallery" class="span10">   <!-- main content -->
 
         <header>
           <div class="page-header">
-            <h1>Example page header</h1>
+            <h1>Album Page</h1>
           </div>
         </header>
 
-        <div class="row-fluid">
-            <div class="col-sm-6 col-md-4">
+        <div class="row">
+
+            <div class="photoHolder col-sm-6 col-md-4">
               <div class="thumbnail">
-                <img src="http://placehold.it/300x300" alt="...">
+                  <img src="http://placehold.it/300x300" alt="..." rel="">
                 <div class="caption">
                   <h3>Thumbnail label</h3>
                 </div>
               </div>
             </div>
 
-            <div class="col-sm-6 col-md-4">
+            <div class="photoHolder col-sm-6 col-md-4">
               <div class="thumbnail">
-                <img src="http://placehold.it/300x300" alt="...">
+                  <img src="http://placehold.it/300x300" alt="..." rel="">
                 <div class="caption">
                   <h3>Thumbnail label</h3>
                 </div>
               </div>
             </div>
 
-            <div class="col-sm-6 col-md-4">
+            <div class="photoHolder col-sm-6 col-md-4">
               <div class="thumbnail">
-                <img src="http://placehold.it/300x300" alt="...">
-                <div class="caption">
-                  <h3>Thumbnail label</h3>
-                </div>
-              </div>
-            </div>
-
-        </div>
-
-        <div class="row-fluid">
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <img src="http://placehold.it/300x300" alt="...">
-                <div class="caption">
-                  <h3>Thumbnail label</h3>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <img src="http://placehold.it/300x300" alt="...">
-                <div class="caption">
-                  <h3>Thumbnail label</h3>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <img src="http://placehold.it/300x300" alt="...">
+                  <img src="http://placehold.it/300x300" alt="..." rel="">
                 <div class="caption">
                   <h3>Thumbnail label</h3>
                 </div>
@@ -192,7 +176,37 @@
 
         </div>
 
-      </div>
+        <div class="row">
+            <div class="photoHolder col-sm-6 col-md-4">
+              <div class="thumbnail">
+                  <img src="http://placehold.it/300x300" alt="..." rel="">
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="photoHolder col-sm-6 col-md-4">
+              <div class="thumbnail">
+                  <img src="http://placehold.it/300x300" alt="..." rel="">
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="photoHolder col-sm-6 col-md-4">
+              <div class="thumbnail">
+                  <img src="http://placehold.it/300x300" alt="..." rel="">
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+      </div> <!-- main content wrapper -->
 
       <footer class="footer">
           <div class="container">
@@ -200,14 +214,16 @@
           </div>
         </footer>
 
-    </div> <!-- div class="album1 container" -->
+    </div> <!-- div class="albumPageMain container-fluid" -->
+
+
 
 
  <!-- Scripts -->
   <script type="text/javascript" src="bower_components/underscore/underscore-min.js"> </script>
-  <script type="text/javascript" src="bower_components/jquery/dist/jquery-min.js"> </script>
-  <script type="text/javascript" src="data.js">  </script>
-  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"> </script>
+  <script type="text/javascript" src="data.js"></script>
+  <script type="text/javascript" src="photo-album.js"></script>
 
 </body>
 </html>
