@@ -1,10 +1,10 @@
-.page {
-  display: none;
+* {
+  list-style-type: none;
 }
 
-.active{
-    display: block;
-})
+body {
+  background:#90e0fe;
+}
 
 
 #overlay {
@@ -19,6 +19,157 @@
 
 }
 
-#overlay img{
+#overlay .imgCover{
   margin-top: 47%;
+}
+
+
+/* .content {
+  display: flex;
+} */
+.albumGallery {
+  width: 100%;
+  height: 100%;
+}
+
+/* .headerText {
+  color: white;
+  height: 100px;
+  line-height: 100px;
+  margin: 0 auto;
+  font-size: 5em;
+} */
+
+.imgDiv {
+  margin-bottom: 20px;
+  transition: ease .5s;
+
+}
+.imgDiv:hover {
+  -webkit-filter:  grayscale(1);
+}
+.imageCover {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+
+}
+
+.albumCover {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 125px;
+  background-color: grey;
+}
+
+.albumTitle {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 75px;
+  clear: left;
+  display: flex;
+  border-bottom: 5px solid grey;
+}
+
+.imageTitle {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 75px;
+  clear: left;
+  display: flex;
+  border-bottom: 5px solid grey;
+}
+
+.albumTitleText {
+  margin: 0 auto;
+  line-height: 75px;
+  height: 75px;
+  color: grey;
+}
+
+.imageTitleText {
+  margin: 0 auto;
+  line-height: 75px;
+  height: 75px;
+  color: grey;
+}
+
+.sideBar {
+  margin: 0;
+  padding: 0;
+  height: 750px;
+  left: 0;
+  display: inline-flex;
+  box-sizing: border-box;
+  align-items: center;
+  background: rgb(191, 252, 247, 0.7);
+}
+
+ .albumButtonBox {
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+.albumButton {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  clear: left;
+  padding: 0;
+  line-height: 40px;
+}
+
+.imageGalleryContent {
+  width: 79%;
+  margin:0;
+  padding: 0;
+}
+.imageGalleryContent2 {
+  width: 80%;
+  margin:0;
+  padding: 0;
+}
+.imageGalleryHeader {
+  height: 100px;
+  margin:0;
+  padding:0;
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+.imageGalleryHeaderText {
+  color: white;
+  height: 100px;
+  line-height: 100px;
+  margin: 0 auto;
+  font-size: 5em;
+}
+
+.imageGallery {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* .hide {
+  display: none;
+}
+
+.show {
+  display: block;
+} */
+
+.page {
+  display: none;
+}
+
+.active{
+    display: block;
 }

@@ -1,34 +1,57 @@
 $(document).ready(function() {
 
-//
-  $("#homePage").on("click", ".albumHolder", function(event){
-    event.preventDefault();
-    activeAlbum = $(this).attr("rel");
+  $('.sideBar').hide();
+  $('.imageGalleryContent').hide();
 
-    $sitePages.removeClass(".active");
-    $imageGallery.addClass(".active");
-    //show them the site for that album//
+
+
+  $('.albumGallery').on('click', '.imgDiv', function(event) {
+        event.preventDefault();
+
+       $('.page-header').hide();
+       $('.imageGalleryContent').removeClass('.active');
+       $('.sideBar').show();
+
+       var albumName = $(this).attr('title');
+       var selectedAlbum = $(this).attr('name');
+
+       $('.imageGalleryContent').removeClass('.active');
+       $('.imageGalleryHeaderText').html(albumName);
+
+
   });
 
+  $('.sideBar').on('click', '.albumButton', function(event) {
+      event.preventDefault();
+
+     var albumName = $(this).attr('title');
+
+     $('.imageGalleryHeaderText').html(albumName);
+
+     selectedAlbum = albumsPics[$(this).attr('name')];
+     var imgString = "";
+     selectedAlbum.forEach(function(el) {
+       imgString += compiledTmpl(el);
+     });
+     $('.imageGallery').html(imgString);
+  });
 
 //    --OVERLAY--   //
-// when the actual picture is clicked, the image is displayed//
+    // When the image is clicked, display//
   var $overlay = $('<div id="overlay"></div>');
   var $image = $("<img>");
-
   $overlay.append($image);
 
-  // add overlay
+    // add overlay//
   $("body").append($overlay);
 
-// capture the click even on a link to an image
+    // capture the click even on a link to an image//
 
-$("#imageGallery img").click(function(event)){
+$("#imageGallery img").on("click"(event)){}
   event.preventDefault();
   var imageLocation = $(this).attr("href");
   //update overlay with the image linked in the link
   $image.attr("src",imageLocation);
-
   //show the overlay
   $overlay.show();
 }
@@ -37,25 +60,4 @@ $overlay.click(function() {
   // Hide the overlay
   $(this).hide();
 });
-
-
-//  template  //
-var template = "";
-posts.forEach(function(el) {
-  template += "<article class='post'><h3>"
-  + el.title
-  +"</h3><p>"
-  + el.content
-  + "</p>"
-  + "<blockquote cite='http://calvin.io'>"
-  + el.author
-  + "</blockquote><a href='' class='delete'>delete</a>"
-  + "</article>";
-
-
-});
-
-
-
-
-})
+//      end of overlay    //

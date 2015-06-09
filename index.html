@@ -6,215 +6,57 @@
   <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
 </head>
+
 <body>
 
-    <div id="homePage" class="page active">
+  <!-- THIS SHOULD BE SET TO DISAPPEAR when in album menu-->
+  <header>
+    <div class="headerText page-header text-center"><h1>Mitch</h1></div>
+  </header>
 
-      <header>
-        <div class="page-header">
-          <h1>My Albums</h1>
+
+  <div class="content container-fluid">
+
+
+
+
+    <!-- image gallery title -->
+    <div class="imageGalleryContent active">
+        <div class="imageGalleryHeader">
+          <div class="imageGalleryHeaderText"></div>
         </div>
-      </header>
+        <!-- SideBar -->
+            <ul class="sideBar col-md-2">
+              <li class="albumButtonBox albBut1 col-sm-1">
+                <div class="albumButton btn btn-default" name="music" title="Music">Music</div>
+                <div class="albumButton btn btn-default" name="beach" title="Beach">Beach</div>
+                <div class="albumButton btn btn-default" name="boats" title="Boats">Boats</div>
+                <div class="albumButton btn btn-default" name="nature" title="Nature">Nature</div>
+                <div class="albumButton btn btn-default" name="city" title="City">City</div>
+                <div class="albumButton btn btn-default" name="animals" title="Animals">Animals</div>
+              </li>
+            </ul><!--Sidebar content-->
 
-      <div class="container-fluid">
-
-        <div class="row">
-
-            <div class="Summer albumHolder col-sm-6 col-md-4">
-              <div class="thumbnail">
-                  <img src="https://static.pexels.com/photos/1106/sea-sky-beach-holiday.jpg" alt="..." rel="">
-                <div class="caption">
-                  <h3>ALBUM 1</h3>
-                </div>
-              </div>
-            </div>
-
-            <div class="Car albumHolder col-sm-6 col-md-4">
-              <div class="thumbnail">
-                  <img src="https://static.pexels.com/photos/111/black-and-white-dark-car-vehicle.jpg" alt="..." rel="">
-                <div class="caption">
-                  <h3>ALBUM 2</h3>
-                </div>
-              </div>
-            </div>
-
-            <div class="Building albumHolder col-sm-6 col-md-4">
-              <div class="thumbnail">
-                  <img src="https://static.pexels.com/photos/814/building-house-high-rise-hdr.jpg" alt="..." rel="">
-                <div class="caption">
-                  <h3>ALBUM 3</h3>
-                </div>
-              </div>
-            </div>
-
+        <div id="imageGallery"class="imageGallery">
+          <!-- This is where to append to -->
         </div>
+    </div>
 
-        <div class="row">
+    <!-- ALBUM GALLERY -->
+      <div class="albumGallery">
+       <!-- This is where to append to -->
+     </div>
 
-            <div class="People albumHolder col-sm-6 col-md-4">
-              <div class="thumbnail">
-                  <img src="https://static.pexels.com/photos/343/man-couple-people-woman.jpg" alt="..." rel="">
-                <div class="caption">
-                  <h3>ALBUM 4</h3>
-                </div>
-              </div>
-            </div>
-
-            <div class="City albumHolder col-sm-6 col-md-4">
-              <div class="thumbnail">
-                  <img src="https://static.pexels.com/photos/291/black-and-white-city-landmark-lights.jpg" alt="..." rel="">
-                <div class="caption">
-                  <h3>ALBUM 5</h3>
-                </div>
-              </div>
-            </div>
-
-            <div class="Nature albumHolder col-sm-6 col-md-4">
-              <div class="thumbnail">
-                  <img src="https://static.pexels.com/photos/176/wood-sea-landscape-mountains.jpg" alt="..." rel="">
-                <div class="caption">
-                  <h3>ALBUM 6</h3>
-                </div>
-              </div>
-            </div>
-
-        </div>
-
-      </div>
-
-      <footer class="footer">
-          <div class="container">
-            <p class="text-muted">Place sticky footer content here.</p>
-          </div>
-        </footer>
-
-    </div> <!-- div class="mainGallery container" -->
+</div>
 
 
-    <div id="albumPageMain" class="page container-fluid">
 
-      <div class="SB row"> <!--Sidebar content-->
-        <div id="side-bar wrapper" class="span2">
-
-            <nav id="spy">
-                <ul class="sidebar-nav nav">
-                    <li class="sidebar-brand active">
-                        <a href="#home"><span class="fa fa-home solo">Home</span></a>
-                    </li>
-                    <li>
-                        <a href="#anch1" data-scroll="">
-                            <span class="fa fa-anchor solo">Anchor 1</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#anch2" data-scroll="">
-                            <span class="fa fa-anchor solo">Anchor 2</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#anch3" data-scroll="">
-                            <span class="fa fa-anchor solo">Anchor 3</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#anch4" data-scroll="">
-                            <span class="fa fa-anchor solo">Anchor 4</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#anch5" data-scroll="">
-                            <span class="fa fa-anchor solo">Anchor 4</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#anch6" data-scroll="">
-                            <span class="fa fa-anchor solo">Anchor 4</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-          </div> <!-- Sidebar wrapper -->
-      </div> <!--Sidebar content-->
-
-
-      <div id="imageGallery" class="span10">   <!-- main content -->
-
-        <header>
-          <div class="page-header">
-            <h1>Album Page</h1>
-          </div>
-        </header>
-
-        <div class="row">
-
-            <div class="photoHolder col-sm-6 col-md-4">
-              <div class="thumbnail">
-                  <img src="http://placehold.it/300x300" alt="..." rel="">
-                <div class="caption">
-                  <h3>Thumbnail label</h3>
-                </div>
-              </div>
-            </div>
-
-            <div class="photoHolder col-sm-6 col-md-4">
-              <div class="thumbnail">
-                  <img src="http://placehold.it/300x300" alt="..." rel="">
-                <div class="caption">
-                  <h3>Thumbnail label</h3>
-                </div>
-              </div>
-            </div>
-
-            <div class="photoHolder col-sm-6 col-md-4">
-              <div class="thumbnail">
-                  <img src="http://placehold.it/300x300" alt="..." rel="">
-                <div class="caption">
-                  <h3>Thumbnail label</h3>
-                </div>
-              </div>
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="photoHolder col-sm-6 col-md-4">
-              <div class="thumbnail">
-                  <img src="http://placehold.it/300x300" alt="..." rel="">
-                <div class="caption">
-                  <h3>Thumbnail label</h3>
-                </div>
-              </div>
-            </div>
-
-            <div class="photoHolder col-sm-6 col-md-4">
-              <div class="thumbnail">
-                  <img src="http://placehold.it/300x300" alt="..." rel="">
-                <div class="caption">
-                  <h3>Thumbnail label</h3>
-                </div>
-              </div>
-            </div>
-
-            <div class="photoHolder col-sm-6 col-md-4">
-              <div class="thumbnail">
-                  <img src="http://placehold.it/300x300" alt="..." rel="">
-                <div class="caption">
-                  <h3>Thumbnail label</h3>
-                </div>
-              </div>
-            </div>
-
-        </div>
-
-      </div> <!-- main content wrapper -->
-
-      <footer class="footer">
-          <div class="container">
-            <p class="text-muted">Place sticky footer content here.</p>
-          </div>
-        </footer>
-
-    </div> <!-- div class="albumPageMain container-fluid" -->
+<!--   FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">Place sticky footer content here.</p>
+    </div>
+  </footer>
 
 
 
